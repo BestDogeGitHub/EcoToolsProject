@@ -17,6 +17,6 @@ public class Casello
 	public void setChilometri(double chilometri) { this.chilometri = chilometri; }
 	public String getNome() { return nome; }
 	public boolean setNome(String nome) {}    // metodo usato per modificare il nome di un casello, se il casello fa parte gia' di una autostrada, si deve prima controllare
-	                                          // che non ci sia un altro casello gia' con quel nome, in quel caso il nome non viene modificato, questo metodo ritorna 'true'
-	                                          // se la rinominazione vaa buon fine, 'false' viceversa
+        // che non ci sia un altro casello gia' con quel nome, in quel caso il nome non viene modificato, questo metodo ritorna 'true'
+        // se la rinominazione vaa buon fine, 'false' viceversa
 }
