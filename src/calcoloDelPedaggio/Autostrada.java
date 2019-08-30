@@ -1,7 +1,7 @@
 package calcoloDelPedaggio;
 
 import java.util.*;
-// test
+
 public class Autostrada implements StradaPrivataAPagamento 
 {	
 	public enum tipoDiTratta   // variabile enumerativa utilizzata per indicare il tipo di autostrada
