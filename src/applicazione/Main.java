@@ -1,8 +1,12 @@
-package calcoloDelPedaggio;
+package applicazione;
 
-import calcoloDelPedaggio.Autostrada.tipoDiTratta;
 
-public class ViaggioInAutostrada 
+import Pedaggio.CalcoloPedaggio;
+import autostrada.Autostrada;
+import autostrada.Autostrada.tipoDiTratta;
+import veicolo.Veicolo;
+
+public class Main 
 {
 	public static void main(String[] args) 
 	{

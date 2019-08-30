@@ -1,4 +1,4 @@
-package calcoloDelPedaggio;
+package veicolo;
 
 public class MezzoSuRuote 
 {

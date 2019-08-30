@@ -1,6 +1,8 @@
-package calcoloDelPedaggio;
+package autostrada;
 
 import java.util.*;
+
+import casello.Casello;
 
 public class Autostrada implements StradaPrivataAPagamento 
 {	
@@ -27,9 +29,9 @@ public class Autostrada implements StradaPrivataAPagamento
 	public tipoDiTratta getTipoAutostrada() { return tipoAutostrada; }
 	public void setTipoAutostrada(tipoDiTratta tipoAutostrada) { this.tipoAutostrada = tipoAutostrada; }
 	
-	public double calcolaChilometriPercorsi( String nomeCaselloPartenza, String nomeCaselloarrivo ) {} // metodo che calcola la distanza fra due caselli dell'autostrada,
+	public double calcolaChilometriPercorsi( String nomeCaselloPartenza, String nomeCaselloarrivo ) {return 0;} // metodo che calcola la distanza fra due caselli dell'autostrada,
         // il casello viene cercato nell' HashMap tramite il suo nome, torna la distanza se i due caselli esistono, '-1' viceversa
 	
-	public boolean aggiungiCasello( String nome, double chilometri ) {} // metodo che aggiunge un casello all'HashMap e gli assegna il suo nome come chiave,
+	public boolean aggiungiCasello( String nome, double chilometri ) {return false;} // metodo che aggiunge un casello all'HashMap e gli assegna il suo nome come chiave,
 	// non fa niente se esiste gia' un casello con quel nome nell'HashMap, ritorna 'true' se il casello viene aggiunto con successo, 'false' viceversa
 }

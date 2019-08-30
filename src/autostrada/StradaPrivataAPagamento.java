@@ -1,4 +1,4 @@
-package calcoloDelPedaggio;
+package autostrada;
 
 public interface StradaPrivataAPagamento // interfaccia per la gestione di una strada privata a pagamento con caselli 
 {
