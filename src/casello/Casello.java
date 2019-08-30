@@ -6,17 +6,21 @@ public class Casello
 							   // basta sottrarre ai chilometri del casello di arrivo quelli del casello di partenza e poi prenderne il valore assoluto
 	
 	private String nome;       // il nome del casello
+	private int autostradaId;    // riferimento all'autostrada a cui appartiene
 	
-	public Casello(double chilometri, String nome) 
+	public Casello(double chilometri, String nome, int autostradaId) 
 	{
 		this.chilometri = chilometri;
 		this.nome = nome;
+		this.autostradaId = autostradaId;
 	}
 
 	public double getChilometri() { return chilometri; }
 	public void setChilometri(double chilometri) { this.chilometri = chilometri; }
 	public String getNome() { return nome; }
-	public boolean setNome(String nome) {return false;}    // metodo usato per modificare il nome di un casello, se il casello fa parte gia' di una autostrada, si deve prima controllare
-        // che non ci sia un altro casello gia' con quel nome, in quel caso il nome non viene modificato, questo metodo ritorna 'true'
-        // se la rinominazione vaa buon fine, 'false' viceversa
+	public void setNome(String nome) {this.nome = nome;} 
+	public int getAutostradaId() { return autostradaId; }
+	public void setAutostradaId(int autostradaId) { this.autostradaId = autostradaId; }
+	
+	
 }
