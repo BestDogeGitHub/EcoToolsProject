@@ -8,7 +8,7 @@ import utility.TipiEnum.tipoDiTratta;
 
 public class Autostrada
 {	
-	int id;
+	private int id;
 	private String nome;
 	private tipoDiTratta tipoAutostrada;
 	private TreeMap<ClasseVeicolo,Double> tariffaUnitaria; // Mappa delle tariffe per ogni classe di veicolo
@@ -19,12 +19,10 @@ public class Autostrada
 		this.id = id;
 		this.nome = nome;
 		this.tipoAutostrada = tipoAutostrada;
-		this.listaCaselli= new ArrayList<Casello>();
 		this.tariffaUnitaria = tariffaUnitaria;
 		this.listaCaselli = listaCaselli;
 	}
 
-	
 	public int getId() { return id; }
 	public void setId(int id) { this.id = id; }
 	public String getNome() { return nome; }
@@ -35,7 +33,4 @@ public class Autostrada
 	public void setTariffaUnitaria(TreeMap<ClasseVeicolo, Double> tariffaUnitaria) { this.tariffaUnitaria = tariffaUnitaria; }
 	public ArrayList<Casello> getListaCaselli() { return listaCaselli; }
 	public void setListaCaselli(ArrayList<Casello> listaCaselli) { this.listaCaselli = listaCaselli; }
-	
-	public boolean aggiungiCasello( String nome, double chilometri ) {return false;} // metodo che aggiunge un casello all'HashMap e gli assegna il suo nome come chiave,
-	// non fa niente se esiste gia' un casello con quel nome nell'HashMap, ritorna 'true' se il casello viene aggiunto con successo, 'false' viceversa
 }

@@ -1,5 +1,6 @@
 package veicolo;
 
+import utility.TipiEnum.ClasseAmbientale;
 import utility.TipiEnum.ClasseVeicolo;
 
 public abstract class Veicolo
@@ -10,7 +11,7 @@ public abstract class Veicolo
 	private int numAssi;                     // numero degli assi del veicolo
 	private int inquinamentoAcustico;
 	private ClasseVeicolo classeVeicolo;
-	private String classeAmbientale;
+	private ClasseAmbientale classeAmbientale;
 	
 	// costruttore per i veicoli pesanti fino al 2021 e per i veicoli leggeri fino al 2026
 	Veicolo(String modello, String marca, String targa, int numAssi, double peso, double altezza,ClasseVeicolo classeVeicolo) 
@@ -23,10 +24,9 @@ public abstract class Veicolo
 		this.numAssi = numAssi;	
 	}
 	
-	
 	// costruttore per i veicoli pesanti dal 2021 e per i veicoli leggeri dal 2026
 	Veicolo( String modello, String marca, double peso, double altezza, String targa,
-			int numAssi, int inquinamentoAcustico, ClasseVeicolo classeVeicolo, String classeAmbientale) 
+			int numAssi, int inquinamentoAcustico, ClasseVeicolo classeVeicolo, ClasseAmbientale classeAmbientale) 
 	{
 		this.modello = modello;
 		this.marca = marca;
@@ -38,8 +38,6 @@ public abstract class Veicolo
 		this.classeVeicolo = classeVeicolo;
 		this.classeAmbientale = classeAmbientale;
 	}
-
-
 
 	public String getModello() { return modello; }
 	public void setModello(String modello) { this.modello = modello; }
@@ -57,8 +55,8 @@ public abstract class Veicolo
 	public void setInquinamentoAcustico(int inquinamentoAcustico) { this.inquinamentoAcustico = inquinamentoAcustico; }
 	public ClasseVeicolo getClasseVeicolo() { return classeVeicolo; }
 	public void setClasseVeicolo(ClasseVeicolo classeVeicolo) { this.classeVeicolo = classeVeicolo; }
-	public String getClasseAmbientale() { return classeAmbientale; }
-	public void setClasseAmbientale(String classeAmbientale) { this.classeAmbientale = classeAmbientale; }
+	public ClasseAmbientale getClasseAmbientale() { return classeAmbientale; }
+	public void setClasseAmbientale(ClasseAmbientale classeAmbientale) { this.classeAmbientale = classeAmbientale; }
 	
 	public boolean equals(Object obj) // due veicoli sono uguali se hanno la stessa targa
 	{

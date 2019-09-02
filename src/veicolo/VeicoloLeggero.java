@@ -1,5 +1,6 @@
 package veicolo;
 
+import utility.TipiEnum.ClasseAmbientale;
 import utility.TipiEnum.ClasseVeicolo;
 
 public class VeicoloLeggero extends Veicolo {
@@ -11,7 +12,7 @@ public class VeicoloLeggero extends Veicolo {
 	
 	// costruttore per i veicoli leggeri dopo il 2026
 	VeicoloLeggero(String modello, String marca, double peso, double altezza, String targa, int numAssi,
-			int inquinamentoAcustico, ClasseVeicolo classeVeicolo, String classeAmbientale) {
+			int inquinamentoAcustico, ClasseVeicolo classeVeicolo, ClasseAmbientale classeAmbientale) {
 		super(modello, marca, peso, altezza, targa, numAssi, inquinamentoAcustico, classeVeicolo, classeAmbientale);
 	}
 
